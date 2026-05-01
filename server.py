@@ -50,8 +50,7 @@ logger.info(f"MCP 监听: http://{HOST}:{PORT}/mcp")
 client = OpenAI(
     api_key=UPSTREAM_KEY,
     base_url=UPSTREAM_BASE,
-    timeout=TIMEOUT,
-    stream=True
+    timeout=TIMEOUT
 )
 
 # 初始化一个MCP服务器
